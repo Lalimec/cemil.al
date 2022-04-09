@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | WordSquare_PM</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=675 height=1200 style="width: 675px; height: 1200px; background: #231F20"></canvas>
+    <script src="Build/WordSquare_html.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WordSquare_html.data.br",
+        frameworkUrl: "Build/WordSquare_html.framework.js.br",
+        codeUrl: "Build/WordSquare_html.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "WordSquare_PM",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
