@@ -5,20 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | WordSquare_PM</title>
   </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=675 height=1200 style="width: 675px; height: 1200px; background: #231F20"></canvas>
-    <script src="Build/WordSquare_html.loader.js"></script>
+  <body style="text-align: center;  display: block; margin: 0px; background: #231F20">
+    <canvas id="unity-canvas" width=450 height=800 style="    width: calc(100vh/800*450); max-width: 100vw; max-height: 100vh; background: #231F20"></canvas>
+    <script src="https://cemil.al/WordSquare/Build/WordSquare.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WordSquare_html.data.br",
-        frameworkUrl: "Build/WordSquare_html.framework.js.br",
-        codeUrl: "Build/WordSquare_html.wasm.br",
+        dataUrl: "https://cemil.al/WordSquare/Build/WordSquare.data",
+        frameworkUrl: "https://cemil.al/WordSquare/Build/WordSquare.framework.js",
+        codeUrl: "https://cemil.al/WordSquare/Build/WordSquare.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "WordSquare_PM",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
